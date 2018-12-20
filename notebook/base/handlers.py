@@ -84,7 +84,7 @@ class AuthenticatedHandler(web.RequestHandler):
         headers = {}
         headers.update(self.settings.get('headers', {}))
 
-        headers["Content-Security-Policy"] = self.content_security_policy
+      #  headers["Content-Security-Policy"] = self.content_security_policy
 
         # Allow for overriding headers
         for header_name, value in headers.items():
